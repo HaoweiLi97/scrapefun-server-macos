@@ -75,18 +75,14 @@ ScrapeFun Desktop for macOS 不是单纯的网页壳，而是围绕 macOS 使用
 - 播放列表更新
 - 更适合桌面端的视频播放链路
 
-## 特性介绍
-
-后续这里可以结合截图重点展示：
-
-- 状态栏图标与菜单
-- Client Settings 中的服务器选择
-- 桌面窗口界面
-- mpv 播放链路
-
 ## 获取方式
 
 直接从 [Latest Release](https://github.com/HaoweiLi97/scrapefun-desktop-macos/releases/latest) 下载 `.dmg` 即可。
+
+当前 Release 中会提供两个文件：
+
+- 客户端：用于连接已有 ScrapeFun 服务
+- 服务端 + 客户端：用于本机托管 ScrapeFun 服务并直接使用桌面端
 
 ## 相关链接
 
