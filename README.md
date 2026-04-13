@@ -17,6 +17,12 @@
 
 ScrapeFun Desktop for macOS 不是单纯的网页壳，而是围绕 macOS 使用方式做的原生桌面宿主。
 
+## 仓库导航
+
+- [ScrapeFun 主仓库](https://github.com/HaoweiLi97/ScrapeFun)
+- [ScrapeFun Desktop for macOS](https://github.com/HaoweiLi97/scrapefun-desktop-macos)
+- [ScrapeFun Applications](https://github.com/HaoweiLi97/scrapefun-applications)
+
 重点在这些桌面能力：
 
 - 原生 Swift + AppKit / WebKit 框架
