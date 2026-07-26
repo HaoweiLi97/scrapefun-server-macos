@@ -48,4 +48,4 @@ ScrapeFun Server for macOS 将服务端、网页管理界面和桌面宿主整�
 
 - [ScrapeFun 使用与 Docker 文档](https://github.com/HaoweiLi97/ScrapeFun)
 - [Windows Server](https://github.com/HaoweiLi97/scrapefun-server-windows)
-- [产品网站](https://mightly.store/)
+- [产品网站](https://scrapefun.com/)
