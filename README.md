@@ -1,101 +1,51 @@
-<div align="center">
-  <img src="./docs/images/favicon.png" alt="ScrapeFun Logo" width="96" />
-  <h1>ScrapeFun Desktop for macOS</h1>
-  <p>为 macOS Desktop 场景设计的原生桌面版本</p>
-  <p>
-    <a href="https://github.com/HaoweiLi97/scrapefun-desktop-macos/releases/latest">
-      <img src="https://img.shields.io/github/v/release/HaoweiLi97/scrapefun-desktop-macos?label=macOS&logo=apple" alt="macOS Latest Release" />
-    </a>
-    <a href="https://github.com/HaoweiLi97/ScrapeFun">
-      <img src="https://img.shields.io/badge/Main-Repository-111827" alt="Main Repository" />
-    </a>
-    <a href="https://hub.docker.com/r/haoweil/scrapefun/tags">
-      <img src="https://img.shields.io/badge/Docker-latest-2496ED?logo=docker&logoColor=white" alt="Docker latest" />
-    </a>
-  </p>
-</div>
+# ScrapeFun Server for macOS
 
-ScrapeFun Desktop for macOS 不是单纯的网页壳，而是围绕 macOS 使用方式做的原生桌面宿主。
+> 最后更新：2026 年 7 月 26 日
 
-## 仓库导航
+ScrapeFun Server for macOS 将服务端、网页管理界面和桌面宿主整合在一个应用中，适合直接在 Mac 上管理媒体库。
 
-- [ScrapeFun 主仓库](https://github.com/HaoweiLi97/ScrapeFun)
-- [ScrapeFun Desktop for macOS](https://github.com/HaoweiLi97/scrapefun-desktop-macos)
-- [ScrapeFun Applications](https://github.com/HaoweiLi97/scrapefun-applications)
+## 下载
 
-重点在这些桌面能力：
+从 [Releases](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/latest) 下载最新的 `macos-arm64` DMG。
 
-- 原生 Swift + AppKit / WebKit 框架
-- 右上角状态栏图标与菜单
-- Client Settings 中的服务器地址切换
-- mpv 原生播放器接入
+当前版本支持 Apple Silicon（M1 及更新芯片）。
 
-## 框架
+## 安装
 
-桌面端采用原生 Swift 宿主，核心是：
+1. 打开下载的 DMG。
+2. 将 `ScrapeFun Server.app` 拖入“应用程序”。
+3. 从“应用程序”启动 ScrapeFun Server。
 
-- AppKit
-- WebKit / `WKWebView`
-- 原生 macOS 菜单与窗口行为
-- 本机托管 ScrapeFun 服务
+如果某个版本需要额外的首次启动步骤，以该版本 Release 页面中的说明为准。
 
-这也是它和纯浏览器访问最大的区别。
+## 状态栏菜单
 
-## 状态栏图标与菜单
+应用启动后会常驻 macOS 状态栏，可用于：
 
-应用会在 macOS 右上角状态栏提供常驻图标，并挂出常用菜单操作。
+- 打开 ScrapeFun
+- 在浏览器中打开
+- 重启服务
+- 查看数据目录和日志目录
+- 设置登录时启动
+- 开启或关闭局域网访问
+- 检查 stable 或 beta 更新
 
-当前菜单能力包括：
+## 数据与日志
 
-- Open ScrapeFun
-- Open in Browser
-- Restart Service
-- Show Data Directory
-- Show Logs Directory
-- Launch at Login
-- Allow LAN Access
-- Quit
+所有运行数据都保存在：
 
-这部分是桌面版本最重要的使用入口之一。
+```text
+~/Library/Application Support/ScrapeFunDesktop/
+```
 
-## Client Settings
+数据库和持久化数据位于 `data` 子目录，日志位于 `logs` 子目录。更新应用不会删除该目录。
 
-客户端版本提供独立的 Settings 窗口，用来配置要连接的 ScrapeFun 服务器地址。
+## 应用内更新
 
-这里的重点不是部署，而是连接哪个服务实例。
-
-适合这些场景：
-
-- 在本机服务和远程服务之间切换
-- 手动指定服务器地址
-- 在桌面端长期固定使用某个实例
-
-## mpv 接入
-
-桌面端支持原生 `mpv` 播放器接入，而不是只停留在浏览器播放层。
-
-当前这部分能力包括：
-
-- 调起本地 `mpv`
-- 字幕加载
-- 播放列表更新
-- 更适合桌面端的视频播放链路
-
-## 获取方式
-
-直接从 [Latest Release](https://github.com/HaoweiLi97/scrapefun-desktop-macos/releases/latest) 下载 `.dmg` 即可。
-
-当前 Release 中会提供两个文件：
-
-- 客户端：用于连接已有 ScrapeFun 服务
-- 服务端 + 客户端：用于本机托管 ScrapeFun 服务并直接使用桌面端
+设置页可以检查新版本，并在 stable 与 beta 频道之间切换。选择 beta 后可以收到测试版本；切回 stable 后会继续跟随稳定版本。
 
 ## 相关链接
 
-- [ScrapeFun 主仓库](https://github.com/HaoweiLi97/ScrapeFun)
-- [macOS 最新版本](https://github.com/HaoweiLi97/scrapefun-desktop-macos/releases/latest)
-- [Docker 镜像](https://hub.docker.com/r/haoweil/scrapefun)
-
-## 联系方式
-
-- Product / Business: `lihaowei977@gmail.com`
+- [ScrapeFun 使用与 Docker 文档](https://github.com/HaoweiLi97/ScrapeFun)
+- [Windows Server](https://github.com/HaoweiLi97/scrapefun-server-windows)
+- [产品网站](https://mightly.store/)
