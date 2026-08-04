@@ -3,13 +3,13 @@
     <channel>
         <title>ScrapeFun Server</title>
         <item>
-            <title>0.2.8</title>
-            <pubDate>Sat, 01 Aug 2026 12:41:29 -0500</pubDate>
-            <sparkle:version>20260801123302</sparkle:version>
-            <sparkle:shortVersionString>0.2.8</sparkle:shortVersionString>
+            <title>0.2.9</title>
+            <pubDate>Mon, 03 Aug 2026 22:24:36 -0500</pubDate>
+            <sparkle:version>20260803221419</sparkle:version>
+            <sparkle:shortVersionString>0.2.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/HaoweiLi97/scrapefun-server-macos/releases/download/v0.2.8/scrapefun-server-macos-arm64-0.2.8-stable.dmg" length="396284310" type="application/octet-stream" sparkle:edSignature="ioMWq36xwy4FY3VrS4RKbkaZQaVMLPjUQBaocE2yXjR/VbTqz++b0/V0tGLGNIQ+bNk3d9fkV4G/Fx75cm4mDA=="/>
+            <enclosure url="https://github.com/HaoweiLi97/scrapefun-server-macos/releases/download/v0.2.9/scrapefun-server-macos-arm64-0.2.9-stable.dmg" length="405877110" type="application/octet-stream" sparkle:edSignature="EMCpj/yoI8GxiYBBpaS+wZAvAIvtFGpXJB1EAvEHpRS2F+UEk8k40ZoTMEBMy7Z5KTHt5Lce8KMqzPCkVbZqDQ=="/>
         </item>
     </channel>
 </rss>
