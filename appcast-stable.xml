@@ -3,13 +3,54 @@
     <channel>
         <title>ScrapeFun Server</title>
         <item>
-            <title>0.3.3</title>
-            <pubDate>Fri, 25 Sep 2026 12:21:54 -0600</pubDate>
-            <sparkle:version>20260925121444</sparkle:version>
-            <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <title>0.4.3</title>
+            <pubDate>Thu, 29 Oct 2026 11:28:57 -0600</pubDate>
+            <sparkle:version>20261029112058</sparkle:version>
+            <sparkle:shortVersionString>0.4.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Installing restarts the server and interrupts active sessions. Your data and settings are kept.</p><p>安装会重启服务器并中断当前连接，数据和设置会保留。</p><h3>ScrapeFun 0.4.3</h3>
+<p>改进媒体识别、扫描进度和任务管理，减少错配，并完善 Linux 安装与更新体验。</p>
+<h3>改进</h3>
+<p>• 自动匹配更重视完整标题、别名、年份和目录信息，改善同名电影、系列电影、剧集及漫画的识别，减少不确定结果被自动确认。</p>
+<p>• 扫描时持续显示新入库内容和资料补全进度；任务中心可按状态筛选和排序，查看队列、重试失败项目并管理已读通知。</p>
+<p>• Linux 原生安装支持自定义端口、指定版本、无人值守安装和安装前检查；改善更新保留配置、下载校验、备份恢复及失败回退。</p>
+<h3>修复</h3>
+<p>• 修复部分剧集季集编号、文件夹归属和未匹配条目再次识别不准确的问题；重新检查自动分集时保留人工确认的绑定。</p>
+<p>• 修复大型媒体库筛选、排序及连续翻页时可能出现的内容遗漏或重复。</p>
+<p>• 改善手动重新匹配和条目合并时的文件关联与用户记录保留；修复后台资料补全、任务通知和扫描列表刷新不及时的问题。</p>
+<p>• 媒体详情、字幕列表、阅读进度和继续观看记录会随后台变化及时更新，减少手动刷新及页面间状态不一致。</p>
+<p>• 修复连续播放切换时短暂显示上一集名称或状态的问题，改善下一集衔接、字幕导入后的剧集关联与刷新，以及有声朗读状态更新。</p>
+<h3>更新前须知</h3>
+<p>• macOS 服务端仅支持 Apple Silicon（M1 或更新），最低系统为 macOS 26.0。本版本未使用 Developer ID 签名或 Apple 公证，系统可能阻止打开；将应用复制到“应用程序”后，可按下方命令解除隔离。</p>
+<p>• Windows 服务端采用 x64 APPX/MSIX 分发，不再提供单独的 EXE 安装包。旧 EXE 安装用户迁移前请备份数据，按最终发布的迁移说明操作。</p>
+<p>• Linux 原生包面向 glibc Linux amd64，需满足安装说明中的 Node、systemd 与媒体运行依赖要求。</p>
+<p>• 更新需要重启服务，播放和后台任务会短暂中断；更新前请保存数据备份。</p>
+<p>```bash</p>
+<p>xattr -dr com.apple.quarantine "/Applications/ScrapeFun Server.app"</p>
+<p>```</p>
+<p>• --</p>
+<h3>ScrapeFun 0.4.3</h3>
+<p>Improve media identification, scan progress, task management, and Linux installation and updates.</p>
+<h3>Improvements</h3>
+<p>• Matching gives greater weight to complete titles, aliases, years, and folder context to better distinguish movies, franchises, TV series, and comics, with fewer uncertain automatic matches.</p>
+<p>• New library items and enrichment progress appear during scanning. Filter and sort tasks, inspect queued work, retry failures, and manage read notifications.</p>
+<p>• Native Linux installation supports custom ports, pinned versions, unattended installation, and preflight checks, with better configuration retention, download verification, backup and restore, and recovery after failed updates.</p>
+<h3>Fixes</h3>
+<p>• Improve season and episode recognition, folder ownership, and retries for unmatched items. Rechecking automatic episode assignments preserves manually confirmed bindings.</p>
+<p>• Fix missing or duplicate results when filtering, sorting, and paging through large libraries.</p>
+<p>• Improve preservation of linked files and user records when manually rematching or merging entries, and fix delayed enrichment status, duplicate task notifications, and slow scan refreshes.</p>
+<p>• Keep media details, subtitle lists, reading progress, and continue-watching records in sync with background changes, reducing manual refreshes and inconsistent page states.</p>
+<p>• Fix the previous episode title or state briefly appearing during continuous playback, and improve next-episode transitions, subtitle import binding and refresh, and read-aloud status updates.</p>
+<h3>Before updating</h3>
+<p>• macOS Server requires an Apple Silicon Mac (M1 or later) running macOS 26.0 or later. This version is not signed with Developer ID or notarized by Apple, so macOS may block opening it. After copying the app to Applications, use the command below to remove quarantine if needed.</p>
+<p>• Windows Server uses x64 APPX/MSIX packages. Separate EXE installers are no longer provided. Existing EXE users should back up data and follow the final migration instructions.</p>
+<p>• Native Linux packages target glibc Linux amd64 and require the Node, systemd, and media dependencies listed in the installation guide.</p>
+<p>• Updating restarts the server and briefly interrupts playback and background work. Back up your data first.</p>
+<p>```bash</p>
+<p>xattr -dr com.apple.quarantine "/Applications/ScrapeFun Server.app"</p>
+<p>```</p>]]></description>
+            <enclosure url="https://github.com/HaoweiLi97/scrapefun-server-macos/releases/download/v0.4.3/scrapefun-server-macos-arm64-0.4.3-stable.dmg" length="564260125" type="application/octet-stream" sparkle:edSignature="FPOa6F/g815d404/vMKOxRLbcl/pWiX4ORlTr64orHYPiDUWeK4XSBzcpFeJihG3enVxRP0ZJzlPOJdmcTRjCA=="/>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/HaoweiLi97/scrapefun-server-macos/releases/download/v0.3.3/scrapefun-server-macos-arm64-0.3.3-stable.dmg" length="491443508" type="application/octet-stream" sparkle:edSignature="PNQdr5mmwuh7BYyNkUFUyLjusnFk2ItFjBOAzyMxpm0SSovzBc+030MI1YsMWVBnpFzHcttK6XhHVNTRXiXTDw=="/>
         </item>
     </channel>
 </rss>
